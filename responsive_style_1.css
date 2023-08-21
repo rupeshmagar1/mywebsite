@@ -211,7 +211,7 @@ button:hover{
     width: 100%;
 }
 .image-section img{
-     width: 350px;
+     width: 400px;
     height: 400px;
     margin-left:150px ;
 }
@@ -558,6 +558,9 @@ footer{
             .about , .contact{
                 width: 35%;
             }
+            #message{
+            width: 165px;
+        }
         }
             .link{
                 width: 30%;
