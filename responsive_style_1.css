@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +14,8 @@ body{
 html{
     scroll-behavior: smooth;
     background-size: cover;
-     width: fit-content;
+    width: fit-content;
+
 }
 
 /**Nav Bar CSS**/
@@ -52,7 +54,7 @@ padding: 7px 13px;
 border-radius: 3px;
 text-transform: uppercase;
 }
-ul li a.active,ul li a:hover{
+li a.active,li a:hover{
 background: #1b6fff;
 transition: .5s;
 }
@@ -136,6 +138,7 @@ nav ul li a{
     }
     #icon{
         font-size: 18px;
+        animation: fa-bounce;
     }
 }
 /**End NavBar**/
@@ -211,9 +214,9 @@ button:hover{
     width: 100%;
 }
 .image-section img{
-      margin-left: -50px;  
-    width: auto;
-    height: auto;
+    width: 350px;
+    height: 400px;
+    margin-left:150px ;
 }
 .content{
     width: 100%;
@@ -262,9 +265,9 @@ button:hover{
         margin: 25px 0px;
     }
     .image-section img{
-        width: 100%;
+      margin-left: -50px;  
         height: auto;
-        margin-top: 20px;
+         width: auto;
     }
     .content h2{
         font-size: 30px;
@@ -287,7 +290,7 @@ button:hover{
 /*End Section_2*/
 /*Section_3*/
 .container{
-    width: 100%;
+    width: 100% ;
     min-height: 100vh;
     background-color: rgb(205 205 205);
     display: flex;
@@ -324,11 +327,12 @@ font-family: sans-serif;
     margin-bottom: 20px;
     font-family: sans-serif;
 }
-@media screen and (max-width:768px)
+@media(max-width:768px)
 {
     .content-section{
         flex-direction: column;
          padding:0px;
+
     }
 }
 /*End Section_3*/
@@ -558,7 +562,10 @@ footer{
             .about , .contact{
                 width: 35%;
             }
+            #message{
+            width: 165px auto;
         }
+    }
             .link{
                 width: 30%;
             }
@@ -573,6 +580,7 @@ footer{
             footer{
             background: #333;
             height: 670px;
+            width: 100%;
         }
         .letter{
             color: white;
@@ -581,7 +589,7 @@ footer{
         .view_letter{
             font-size: 15px;
         }
-        }
+     }
 
       .text{
         color: #0082e6;
@@ -610,4 +618,7 @@ footer{
     font-size: 1.5rem;
     text-shadow: 0 2px 5px rgb(0,0,0.5);
 }
+/*.footer_address:hover{
+background-color:red;
+}*/
 /*End footer_section*/
