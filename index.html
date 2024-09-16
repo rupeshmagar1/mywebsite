@@ -197,14 +197,14 @@
 <script type="text/javascript">
 	function checkforblank(){
 	if (document.getElementById('email').value=="") {
-		swal({
-					icon:'success',
-			                title:'Success',
+		swal.fire({
+					icon:'info',
+			                title:'info',
 					text:'Enter Your Gmail Id',
 				});
 return false;
 			}else{
-				swal({
+				swal.fire({
 					icon:'error',
 			                title:'Oops',
 					text:'Sorry!! your data can not be store',
