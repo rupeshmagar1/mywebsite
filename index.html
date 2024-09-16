@@ -198,18 +198,16 @@
 	function checkforblank(){
 	if (document.getElementById('email').value=="") {
 		swal({
-					title:'Info!',
+					icon:'success',
+			                title:'Success',
 					text:'Enter Your Gmail Id',
-					icon:'Success',
-					button:'Ok',
 				});
 return false;
 			}else{
 				swal({
-					title:'Warning',
-					text:'Sorry!! your data can not be store.',
-					icon:'Success',
-					button:'Ok',
+					icon:'error',
+			                title:'Oops',
+					text:'Sorry!! your data can not be store',
 				});
 			}
 
