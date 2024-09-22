@@ -153,7 +153,7 @@
 			<h2>Ready to explorer?</h2>
 			<p>Let's go on vacation, make your day</p>
 		</div>
-		<form method="post" action="#" onsubmit="checkforblank()">
+		<form method="post" action="#" onsubmit="return checkforblank()">
 			<input type="email" name="email" id="email" placeholder="Enter your email.....">
 			<input type="submit" value="Submit" name="submit" class="btn" >
 		</form>
@@ -202,7 +202,6 @@
 			                title:'info',
 					text:'Enter Your Gmail Id',
 				});
-return false;
 			}else{
 				swal({
 					icon:'error',
@@ -210,6 +209,7 @@ return false;
 					text:'Sorry!! your data can not be store',
 				});
 			}
+		return false;
 
 }
 </script>
